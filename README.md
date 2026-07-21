@@ -20,9 +20,15 @@
 .
 ├── contracts/
 │   ├── AcademyToken.sol
+│   ├── HelloWorld.sol
+│   ├── KittyNFT.sol
+│   ├── MyToken.sol
 │   ├── SimpleVault.sol
 │   ├── Storage.sol
+│   ├── TutorialVoting.sol
 │   └── Voting.sol
+├── docs/
+│   └── ganache-express.md
 ├── frontend/
 │   ├── src/
 │   │   ├── main.js
@@ -330,6 +336,27 @@ Chain ID: 11155111
 ### CBDC
 
 `Central Bank Digital Currency`의 약자로, 중앙은행이 발행하는 디지털 형태의 법정통화입니다.
+
+</details>
+
+<details>
+<summary><strong>9. Ganache + Express + Web3.js</strong></summary>
+
+Ganache 로컬 블록체인과 강의용 Express 템플릿을 연결해 다음 기능을 웹 화면에서 실행했습니다.
+
+- HelloWorld 문자열 조회 및 변경
+- 학습용 MyToken 잔액 조회, 발행, 전송
+- 후보 추가, 투표, 득표수 조회
+
+```text
+브라우저
+→ Express (localhost:3001)
+→ Web3.js
+→ Ganache (127.0.0.1:7545)
+→ Solidity 컨트랙트
+```
+
+세부 실행 방법과 보안 주의사항은 [`docs/ganache-express.md`](docs/ganache-express.md)에 정리했습니다.
 
 </details>
 
